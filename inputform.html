@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 Wireframe</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 175px; 
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+<!-- Sidebar -->
+<nav class="sidebar">
+    <!-- Navbar content goes here -->
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Edit Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Notifications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Form Section -->
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Information Input</h5>
+            <form>
+              <!-- Mortgages and Insurances -->
+              <div class="mb-3">
+                <label for="mortgageAmount" class="form-label">Mortgage Amount</label>
+                <input type="text" class="form-control" id="mortgageAmount" placeholder="Enter mortgage amount">
+              </div>
+              <div class="mb-3">
+                <label for="insuranceType" class="form-label">Insurance Type</label>
+                <select class="form-select" id="insuranceType">
+                  <option selected>Select insurance type</option>
+                  <option>Homeowners' insurance</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <!-- Lawn -->
+              <div class="mb-3">
+                <label for="lawnSize" class="form-label">Lawn Size (sqft)</label>
+                <input type="number" class="form-control" id="lawnSize" placeholder="Enter lawn size">
+              </div>
+              <!-- Interior -->
+              <div class="mb-3">
+                <label for="floorPlan" class="form-label">Upload Floor Plan</label>
+                <input type="file" class="form-control" id="floorPlan">
+              </div>
+              <!-- Internet -->
+              <div class="mb-3">
+                <label for="internetSpeed" class="form-label">Internet Speed (Mbps)</label>
+                <input type="number" class="form-control" id="internetSpeed" placeholder="Enter internet speed">
+              </div>
+              <!-- Phones -->
+              <div class="mb-3">
+                <label for="numberOfPhones" class="form-label">Number of Cell Phones</label>
+                <input type="number" class="form-control" id="numberOfPhones" placeholder="Enter number of phones">
+              </div>
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
